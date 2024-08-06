@@ -1,0 +1,10 @@
+<h1>Pets#new</h1>
+<p>Find me in app/views/pets/new.html.erb</p>
+
+<%= form_with model: @pet, method: :post do |form| %>
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %>
+  <%= form.label :race, "Race:" %>
+  <%= form.text_field :race %>
+  <%= form.submit "Search" %>
+<% end %>

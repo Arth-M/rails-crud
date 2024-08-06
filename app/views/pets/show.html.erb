@@ -1,0 +1,11 @@
+<h1>Pets#show</h1>
+<p>Find me in app/views/pets/show.html.erb</p>
+
+<p><%= @pet.name %></p>
+<p><%= @pet.race %></p>
+<% if @pet.founded %>
+  <p><%= @pet.found_on %></p>
+  <% else %>
+  <p>Pet not yet founded</p>
+<% end %>
+<p><%= link_to 'Edith', edit_pet_path(@pet) %></p>

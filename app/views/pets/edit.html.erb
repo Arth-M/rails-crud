@@ -1,0 +1,14 @@
+<h1>Pets#edit</h1>
+<p>Find me in app/views/pets/edit.html.erb</p>
+
+<%= form_with model: @pet do |form| %>
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %>
+  <%= form.label :race, "Race:" %>
+  <%= form.text_field :race %>
+  <%= form.label :founded, "Founded?"%>
+  <%= form.check_box :founded %>
+  <%= form.label :found_on, "Founded on:" %>
+  <%= form.text_field :found_on %>
+  <%= form.submit "Update" %>
+<% end %>
